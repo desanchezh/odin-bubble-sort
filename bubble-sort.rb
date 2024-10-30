@@ -3,7 +3,7 @@ def bubble_sort(array)
   (array.length - 1).times do
     array.each_with_index do |number, index|
       offset = index + 1
-      if index + 1 == array.size
+      if offset == array.size
       elsif number > array[offset]
         removed = array.delete_at(offset)
         array.insert(index, removed)
